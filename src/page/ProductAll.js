@@ -9,11 +9,13 @@ const ProductAll = () => {
     const [query, setQuery] = useSearchParams();
 
     const getProducts = async () => {
-        let searchQuery = query.get('q') ||""; // if there is no query, it will be an empty string
-        let response = await fetch(`https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s?q=${searchQuery}`);
+        //  if there is no query, it will be an empty string
+        let searchQuery = query.get('q');
+        let url = (searchQuery == null ? `https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s/products` : `https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s?q=${searchQuery}`);
+        let response = await fetch(url);
         let data = await response.json();
         setProductList(data);
-    };
+    }; 
 
     useEffect(() => {
         getProducts()
