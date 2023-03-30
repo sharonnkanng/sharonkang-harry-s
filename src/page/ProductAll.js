@@ -10,8 +10,8 @@ const ProductAll = () => {
 
     const getProducts = async () => {
         //  if there is no query, it will be an empty string
-        let searchQuery = query.get('q');
-        let url = (searchQuery == null ? `https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s/products` : `https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s?q=${searchQuery}`);
+        let searchQuery = query.get('q') || null;
+        let url = (searchQuery == null ? `https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s/products` : `https://my-json-server.typicode.com/sharonnkanng/sharonkang-harry-s/products?q=${searchQuery}`);
         let response = await fetch(url);
         let data = await response.json();
         setProductList(data);

@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
     // prevent page to refresh
     event.preventDefault();
     setIsLogin(true);
-    console.log("login")
+    // console.log("login")
     navigate('/');
    };
   
