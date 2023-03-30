@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.page {
+  background-color: #f2f3f5;
+  font-family: "Raleway", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2,
+p {
+  font-family: "Cabin", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-primary {
+  background-color: "#A43716" !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-img {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.page-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+input {
+  margin-left: 5px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+}
+
+.nav-section {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadada;
+}
+
+.cart {
+  margin-right: 40px;
+  cursor: pointer;
+}
+.logo {
+  margin-left: 30px;
+}
+
+.menu-area {
+  padding-top: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-bottom: 1px solid #dadada;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-list li {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.logistics {
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useEffect, useState }  from "react";
+import  {Routes, Route} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ProductAll  from "./page/ProductAll";
+import ProductDetail from "./page/ProductDetail";
+import LogIn from "./page/LogIn";
+import Navbar from "./component/Navbar";
+import PrivateRoute from "./route/PrivateRoute";
 
 function App() {
+
+  const [isLogin, setIsLogin] = useState(false);
+
+  useEffect(() => {
+    console.log("signed in?", isLogin);
+  }, [isLogin])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<ProductAll/>}/>
+      <Route path="/login" element={<LogIn setIsLogin={setIsLogin}/>}/>
+      <Route path="/product/:id" element={<PrivateRoute authenticate={isLogin} />}/>
+    </Routes>
     </div>
   );
 }
