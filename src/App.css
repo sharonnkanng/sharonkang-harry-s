@@ -4,7 +4,7 @@
 }
 
 h2,
-p {
+p button {
   font-family: "Cabin", sans-serif;
 }
 
@@ -16,8 +16,12 @@ p {
   justify-content: flex-end;
 }
 
+.detail-page {
+  padding-top: 50px;
+}
+
 .page-header {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -33,6 +37,25 @@ input {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #dadada;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-icon-container {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  padding-top: 12px;
+  margin-bottom: 12px;
 }
 
 .cart {

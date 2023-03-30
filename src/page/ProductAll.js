@@ -28,7 +28,7 @@ const ProductAll = () => {
         <h2>All Products</h2>
         <p>We make products for all men, thoughtfully.</p>
         </div>
-        <Row>
+        <Row class="mb-3">
          {productList.map((product) => (
             <Col sm={4}>
                 <ProductCard item={product}/>

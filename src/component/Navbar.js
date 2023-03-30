@@ -26,7 +26,7 @@ const Navbar = () => {
     <div>
 
         <div className="nav-section">
-            <a href="https://www.harrys.com/en/us" target="_blank"><img className="logo" width={120} src="https://imgtr.ee/images/2023/03/30/UJvVl.png" /></a>
+            <a href="/"><img className="logo" width={120} src="https://imgtr.ee/images/2023/03/30/UJvVl.png" /></a>
         
             <ul className='menu-list'>
                 <div>
