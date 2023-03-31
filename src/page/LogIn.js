@@ -9,13 +9,12 @@ import { useNavigate } from 'react-router-dom';
     // prevent page to refresh
     event.preventDefault();
     setIsLogin(true);
-    // console.log("login")
     navigate('/');
    };
   
 
   return (
-    <Container> 
+    <Container className='page login'> 
     <Form onSubmit={(event) => loginUser(event)}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>

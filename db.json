@@ -5,8 +5,6 @@
       "img": "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/b5bd4b787ea229c2a793c2a2dcce8595710c3088.jpg",
       "title": "Truman Set",
       "price": 15,
-      "choice": true,
-      "new": true,
       "color": ["Sage", "Amber", "Ocean", "Charcoal"],
       "description": "A complete men’s shaving set, in one handsome box."
     },
@@ -15,8 +13,6 @@
       "img": "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/ff1f5c627c8701a3594ca8a3d58ed2a67664b5e1.jpg",
       "title": "Winston Set",
       "price": 17,
-      "choice": true,
-      "new": true,
       "color": ["Graphite", "Navy"],
       "description": "A luxurious set of shaving supplies, all boxed up."
     },
@@ -25,9 +21,7 @@
       "img": "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/d76f697ba4d9dfad86f1a4bf78f809723e92b902.",
       "title": "Craft Set",
       "price": 20,
-      "choice": false,
-      "new": true,
-      "color": ["S", "M", "L"],
+      "color": ["Sage", "Amber", "Ocean", "Charcoal", "Graphite"],
       "description": "The latest and greatest in our razor handle lineup."
     },
     {
@@ -35,9 +29,7 @@
       "img": "https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/0c504b42bbf475b925b461eba84ba7bee66ea4f7.jpg",
       "title": "Body Wash",
       "price": 7.49,
-      "choice": false,
-      "new": true,
-      "color": ["S", "M", "L"],
+      "color": ["Amber", "Ocean", "Charcoal"],
       "description": "Lots of bubbles in this men’s Body Wash."
     },
     {
@@ -47,7 +39,7 @@
       "price": 30,
       "choice": false,
       "new": true,
-      "color": ["S", "M", "L"],
+      "color": ["Sage", "Amber", "Ocean", "Charcoal", "Graphite"],
       "description": "All the essentials, in a travel shaving kit."
     }
   ]

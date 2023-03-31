@@ -2,7 +2,6 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
-import { Card } from 'react-bootstrap';
 
 const ProductCard = ({item}) => {
     const navigate = useNavigate();

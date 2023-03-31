@@ -1,28 +1,7 @@
-.page {
-  background-color: #f2f3f5;
-  font-family: "Raleway", sans-serif;
-}
-
 h2,
-p button {
+p,
+button {
   font-family: "Cabin", sans-serif;
-}
-
-.btn-primary {
-  background-color: "#A43716" !important;
-}
-.product-img {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.detail-page {
-  padding-top: 50px;
-}
-
-.page-header {
-  padding-top: 50px;
-  padding-bottom: 30px;
 }
 
 input {
@@ -30,13 +9,6 @@ input {
   outline: 0;
   border-width: 0 0 2px;
   border-color: black;
-}
-
-.nav-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #dadada;
 }
 
 .card {
@@ -62,6 +34,20 @@ input {
   margin-right: 40px;
   cursor: pointer;
 }
+
+.detail-page {
+  padding-top: 50px;
+}
+
+.logistics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login {
+  margin-top: 50px;
+  padding: 10px;
+}
 .logo {
   margin-left: 30px;
 }
@@ -79,6 +65,7 @@ input {
   display: flex;
   list-style-type: none;
   align-items: center;
+  color: black;
 }
 
 .menu-list li {
@@ -87,7 +74,29 @@ input {
   cursor: pointer;
 }
 
-.logistics {
+.menu-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-section {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #dadada;
+}
+
+.page {
+  background-color: #f2f3f5;
+  font-family: "Raleway", sans-serif;
+}
+
+.page-header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: flex-end;
 }

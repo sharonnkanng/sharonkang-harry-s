@@ -31,7 +31,6 @@ const ProductDetail = () => {
           <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
             Color
           </Dropdown.Toggle>
-
           <Dropdown.Menu>
             {product? product.color.map(color => 
               <Dropdown.Item>{color}</Dropdown.Item>) : null}

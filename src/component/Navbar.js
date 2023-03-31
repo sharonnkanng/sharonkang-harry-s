@@ -5,13 +5,19 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = ({isLogin, setIsLogin}) => {
 
     const logisticsList = ["JOIN CORE", "ABOUT"];
     const menuList = ["Get Started", "Shave", "Face Care", "Body Care", "Deodorant", "Hair Care", "Accessories", "Bundles", "Surplus Store", "Shop All"]
+    
     const navigate = useNavigate();
+
     const goToLogin = () => {
-        navigate('/login');
+       if (isLogin) {
+            setIsLogin(false);
+        } else {
+            navigate('/login');
+        }
     }
 
     const search = (event) => { 
@@ -35,15 +41,19 @@ const Navbar = () => {
                 </div>
                 {logisticsList.map(logistic => 
                 <li>{logistic}</li>)}
-                <li className='login-button' onClick={goToLogin}>SIGN IN</li>
+                <li onClick={goToLogin}>{isLogin ? "SIGN OUT": "SIGN IN"}</li>
                 <div className='cart'><FontAwesomeIcon icon={faCartShopping} size="2x" /></div>
             </ul>
         </div>
 
         <div className='menu-area'>
             <ul className='menu-list'>
-                {menuList.map(menu => 
-                <li>{menu}</li>)}
+                {menuList.map((menu, index) => 
+                <li key={index}>
+                <a href="#" key={index}>
+                {menu}
+                </a>
+                </li>)}
             </ul>
         </div>
     </div>

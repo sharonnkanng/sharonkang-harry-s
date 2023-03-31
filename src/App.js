@@ -12,13 +12,13 @@ function App() {
 
   const [isLogin, setIsLogin] = useState(false);
 
-  useEffect(() => {
-    console.log("signed in?", isLogin);
-  }, [isLogin])
+  // useEffect(() => {
+  //   console.log("signed in?", isLogin);
+  // }, [isLogin])
 
   return (
     <div>
-    <Navbar/>
+    <Navbar isLogin={isLogin} setIsLogin={setIsLogin}/>
     <Routes>
       <Route path="/" element={<ProductAll/>}/>
       <Route path="/login" element={<LogIn setIsLogin={setIsLogin}/>}/>
